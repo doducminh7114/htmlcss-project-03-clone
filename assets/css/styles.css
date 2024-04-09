@@ -40,13 +40,14 @@ button {
   min-width: 173px;
   height: var(--height);
   padding: 0 20px;
-  border-radius: 40px;
   border: 1px solid #143c3c;
+  border-radius: 40px;
   color: #fff;
   font-family: "Public Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 1.56;
+  text-align: center;
+  line-height: var(--height);
   background: #143c3c;
 }
 
@@ -114,4 +115,111 @@ button {
 .header-action {
   display: flex;
   align-items: center;
+}
+/* hero */
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 74px;
+}
+
+.hero__content {
+  flex-shrink: 0;
+  width: 44%;
+}
+
+.hero__media {
+  flex-grow: 1;
+}
+
+.hero__heading {
+  color: #152427;
+  font-family: "Public Sans";
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2; /* 120% */
+}
+
+.hero__desc {
+  margin-top: 20px;
+  color: var(--text-color-black-gray, #575d5e);
+  /* Paragraph/h2 18px medium */
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.56; /* 155.556% */
+}
+
+.hero__row {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero__watch-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38px;
+  gap: 15px;
+}
+
+.hero__watch-video--link {
+  color: #152427;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.hero__img {
+  width: 202px;
+  height: 466px;
+  flex-shrink: 0;
+  border-radius: 110px;
+  display: block;
+  object-fit: cover;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.hero__img:nth-child(2) {
+  margin-top: 137px;
+  box-shadow: 0 0 300px rgba(77, 187, 154, 0.8);
+  flex-shrink: 1;
+}
+
+/* logo */
+.logo-section {
+  margin-top: 130px;
+  background: #e2eddf;
+  padding: 87px 122px;
+  width: 100%;
+  border-radius: 100.5px;
+}
+
+.logo-section__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-section__item--text {
+  color: #163c35;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.logo-section__item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
